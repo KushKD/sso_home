@@ -10,7 +10,6 @@ export default function HeroSection() {
             <h1 className={styles.headingPrimary}>
               <q> One Login, Limitless Convenience </q>
             </h1>
-
             <p className={styles.heroDescription}>
               Simplify your digital experience with Single Sign-On, enabling
               seamless navigation across multiple platforms using just one set
