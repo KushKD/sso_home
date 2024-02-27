@@ -33,8 +33,8 @@ export default function Header() {
               </Link>
             </li>
             <li>
-              <Link className={styles.mainNavLink} href="#">
-                Integrations
+              <Link className={styles.mainNavLink} href="#faq">
+                FAQ
               </Link>
             </li>
             <li>

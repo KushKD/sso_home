@@ -1,4 +1,5 @@
 // import "../app/globals.css";
+import Image from "next/image";
 import styles from "./HeroSection.module.css";
 
 export default function HeroSection() {
@@ -8,7 +9,7 @@ export default function HeroSection() {
         <div className={styles.hero}>
           <div className={styles.heroTextBox}>
             <h1 className={styles.headingPrimary}>
-              <q> One Login, Limitless Convenience </q>
+              <q>One Login, Limitless Convenience</q>
             </h1>
             <p className={styles.heroDescription}>
               Simplify your digital experience with Single Sign-On, enabling

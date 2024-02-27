@@ -7,10 +7,12 @@
   justify-content: space-between;
   align-items: center;
   background-color: #fff;
-
-  /* Because we want header to be sticky later */
-  height: 8.6rem;
-  padding: 0 3.8rem;
+  border-bottom: 2px solid #4586c9; /* Adjust the color and thickness as needed */
+  height: 5rem;
+  padding: 03.8rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000; /* Ensure it's on top of other content */
 }
 
 .logo {
@@ -32,7 +34,6 @@
   list-style: none;
   display: flex;
   align-items: center;
-  gap: 3.2rem;
 }
 
 .mainNavLink:link,
@@ -41,13 +42,18 @@
   text-decoration: none;
   color: #333;
   font-weight: 500;
-  font-size: 1.8rem;
+  padding: 1.3rem 1rem;
+  font-size: 1.6rem;
   transition: all 0.3s;
 }
 
 .mainNavLink:hover,
 .mainNavLink:active {
-  color: #1768bc;
+  color: #fff;
+  background-color: #4586c9;
+  padding: 4.2rem 1rem;
+  border-radius: 7px;
+  font-weight: 500;
 }
 
 .mainNavLink.navCta:link,
