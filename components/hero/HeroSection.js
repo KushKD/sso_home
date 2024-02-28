@@ -24,7 +24,10 @@ export default function HeroSection() {
             >
               Register Yourself
             </a>
-            <a href="#" className={`${styles.btn} ${styles.btnOutline}`}>
+            <a
+              href="#howItWorks"
+              className={`${styles.btn} ${styles.btnOutline}`}
+            >
               Learn More &darr;
             </a>
           </div>
