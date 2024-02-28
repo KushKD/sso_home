@@ -2,7 +2,8 @@
 
 .tabsContainer {
   display: flex;
-  align-items: flex-start;
+  align-items: center; /* Center align tabs */
+  justify-content: center; /* Center align tabs */
 }
 
 .tabs {
@@ -12,33 +13,161 @@
 
 .tab {
   cursor: pointer;
-  padding: 10px;
-  margin-bottom: 5px;
-  border: 1px solid #ccc;
-  border-right: none;
-  background-color: #f0f0f0;
-}
-
-.tab:last-child {
-  border-bottom: none;
+  padding: 15px 20px; /* Added padding */
+  margin: 10px; /* Adjusted margin */
+  border: none; /* Removed border */
+  background-color: #fff; /* Set background color */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transitions */
+  position: relative; /* Position for the orange line */
+  font-size: 16px; /* Adjusted font size */
+  color: #1a73d1; /* Set text color */
+  font-weight: bold; /* Set font weight to bold */
+  line-height: 1.5; /* Adjusted line height */
+  border-radius: 4px; /*Rounded corners */
+  width: 200px; /* Initial width */
+  height: 100px; /* Initial height */
+  display: flex; /* Allow for centering of text */
+  align-items: center; /* Center align text */
+  justify-content: center; /* Center align text */
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.3); /* Added drop shadow */
 }
 
 .tab.active {
-  background-color: #fff;
-  font-weight: bold;
+  background-color: #555; /* Lighter background on hover */
+  color: #fff; /* Text color on hover */
+}
+
+.tab:hover {
+  background-color: #0d5cad; /* Lighter background on hover */
+  color: #fff; /* Text color on hover */
+}
+
+.tab::after {
+  /* Orange line */
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 0;
+  height: 100%;
+  background-color: orange;
+  transition: width 1s ease; /* Transition for the orange line */
+  z-index: -1; /* Place the orange line behind the tab */
+}
+
+.tab:hover::after {
+  width: 3px; /* Width of the orange line */
 }
 
 .tabContent {
-  margin-left: 20px;
+  /* margin-left: 20px; */
+  width: 100%; /* Adjusted width to full width */
 }
 
 .content {
   display: none;
-  padding: 10px;
+  /* padding: 5px; */
   border: 1px solid #ccc;
   border-radius: 5px;
+  /* background-image: url('watermark.png'); Background image as watermark */
+  background-position: bottom right; /* Position the watermark */
+  background-repeat: no-repeat; /* Prevent repetition of watermark */
 }
 
 .content.active {
   display: block;
+  width: 100%;
+  height: 35rem;
+  /* background-color: #e8f1fa; */
+  border: 3px dashed #f2f2f2;
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.3);
+}
+
+.grid {
+  display: grid;
+}
+
+.gridCustom {
+  grid-template-columns: 0.7fr 0.3fr;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.icon {
+  /* height: 80%; */
+  width: 80%;
+}
+
+/* CustomList.module.css */
+
+.customList {
+  /* background-color: #fff;
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  border-radius: 10px; */
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+}
+
+.listItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  text-decoration: none;
+  background-color: #fff;
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.itemText {
+  text-decoration: none;
+  font-size: 1.5rem;
+  line-height: 1;
+  color: #1a73d1;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  text-align: left;
+  padding: 1rem;
+  transition: color 0.3s ease; /* Transition for hover effect */
+}
+
+.itemText:hover {
+  color: orange; /* Hover effect */
+}
+
+.itemText:visited {
+  color: orange; /* Visited effect */
+}
+
+.itemText a {
+  color: #1a73d1; /* Link effect */
+  text-decoration: none;
+  font-size: 1.5rem;
+  line-height: 1;
+  color: #1a73d1;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  text-align: left;
+  padding: 1rem;
+}
+
+.headingPrimary {
+  font-size: 2.5rem;
+  line-height: 1;
+  color: #333;
+  font-weight: 300;
+  margin-bottom: 1.2rem;
+  text-align: center;
+}
+
+.tickIcon {
+  width: 20px; /* Adjust width as needed */
+  height: auto; /* Maintain aspect ratio */
+  margin-right: 3px; /* Adjust margin as needed */
+  vertical-align: middle; /* Align vertically with text */
 }

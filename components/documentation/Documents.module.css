@@ -1,0 +1,22 @@
+.sectionDocuments {
+  padding: 5.6rem 0;
+  /* background-color: #fff; */
+  background-color: #fff;
+}
+
+.container {
+  /* 1140px */
+  max-width: 120rem;
+  padding: 0 3.2rem;
+  margin: 0 auto;
+}
+
+.headingSecondary {
+  font-size: 3.5rem;
+  line-height: 1;
+  color: #333;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  margin-bottom: 4.2rem;
+  text-align: center;
+}

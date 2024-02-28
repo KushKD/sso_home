@@ -4,6 +4,7 @@ import Header from "@/components/header/Header";
 import Accordian from "@/components/accordian/Accordian";
 import FAQ from "@/components/faq/FAQ";
 import Tabs from "@/components/tabs/Tabs";
+import Documents from "@/components/documentation/Documents";
 
 export default function Home() {
   return (
@@ -11,7 +12,7 @@ export default function Home() {
       <Header />
       <main>
         <HeroSection />
-        <Tabs />
+        <Documents />
         <FAQ />
       </main>
     </>

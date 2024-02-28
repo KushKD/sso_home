@@ -28,7 +28,7 @@ export default function Header() {
               </Link>
             </li>
             <li>
-              <Link className={styles.mainNavLink} href="#">
+              <Link className={styles.mainNavLink} href="#documentation">
                 Documentation
               </Link>
             </li>
@@ -45,7 +45,8 @@ export default function Header() {
             <li>
               <Link
                 className={`${styles.mainNavLink} ${styles.navCta}`}
-                href="#"
+                href="https://sso.hp.gov.in"
+                target="_blank"
               >
                 Sign Up
               </Link>
