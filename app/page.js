@@ -6,6 +6,7 @@ import FAQ from "@/components/faq/FAQ";
 import Tabs from "@/components/tabs/Tabs";
 import Documents from "@/components/documentation/Documents";
 import HowItWorks from "@/components/howItWorks/HowItWorks";
+import Footer from "@/components/footer/Footer";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
         <Documents />
         <FAQ />
       </main>
+      <Footer />
     </>
   );
 }

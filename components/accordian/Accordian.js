@@ -15,26 +15,20 @@ const accordionData = [
       "The basic objective of HPSSO is to eliminate individual & repetitive sign-on procedures by centralizing user authentication and identity management at a central identity provider. It increases user productivity on a national level as its intuitive interface allows better user mobility and provides seamless access to multiple services and applications by authenticating just once.",
   },
   {
-    title: "Is it Safe to Share the Aadhaar Card details with HP-SSO ?",
+    title: "Is it safe to share Aadhaar details with HP-SSO ?",
     description:
-      "Yes, it’s completely safe as SSOs under Himachal Pradesh Government, takes care of Aadhaar data and keep Aadhaar details in the Aadhaar vault as per the guidelines of the Aadhaar Act.",
+      "Yes, it’s completely safe as SSO under Himachal Pradesh Government, takes care of Aadhaar data and keep Aadhaar details in the Aadhaar vault as per the guidelines of the Aadhaar Act.",
   },
   {
     title: "How to Register using HP-SSO",
     description:
-      "The citizen may register by providing a Mobile number, Name, and Gender to create credentials i.e. username and password. User may also perform eKYC using Aadhaar Number.",
+      "The citizen may register by providing a Mobile number, Name, Gender to create credentials i.e. username and password. User may also perform eKYC using Aadhaar Number.",
   },
 
   {
     title: "What is the Login Process of HP-SSO",
     description:
       "One can login using the credentials i.e. username/mobile/Aadhaar/Email and password generated at the time of signup on the SSO platform. On successful authentication, two-step multi-factor authentication is performed as well. After the completion of 2FA, the user logs in successfully.",
-  },
-
-  {
-    title: "What is two step Multi Level Authentication",
-    description:
-      "One of the most secure prevention controls for unauthorized access, fraud, and cyber identity thefts is two-step multifactor authentication. This feature incorporates an additional layer of security, in which a user gets authenticated by providing a password, as well as a second factor, that could be an OTP (sent over registered mobile number or E-mail ID).",
   },
 ];
 

@@ -6,7 +6,7 @@ export default function FAQ() {
     <>
       <section className={styles.sectionHow} id="faq">
         <h1 className={`${styles.container} ${styles.headingSecondary} `}>
-          Frequently Asked Question ?
+          Frequently Asked Questions ?
         </h1>
         <div
           className={`${styles.container} ${styles.grid} ${styles.grid_2_cols}`}

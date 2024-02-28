@@ -36,14 +36,14 @@ export default function Header() {
             </li>
             <li>
               <Link className={styles.mainNavLink} href="#faq">
-                FAQ
+                FAQs
               </Link>
             </li>
-            <li>
+            {/* <li>
               <Link className={styles.mainNavLink} href="#">
                 Application Onboarding
               </Link>
-            </li>
+            </li> */}
             <li>
               <Link
                 className={`${styles.mainNavLink} ${styles.navCta}`}
