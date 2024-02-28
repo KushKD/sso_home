@@ -5,6 +5,7 @@ import Accordian from "@/components/accordian/Accordian";
 import FAQ from "@/components/faq/FAQ";
 import Tabs from "@/components/tabs/Tabs";
 import Documents from "@/components/documentation/Documents";
+import HowItWorks from "@/components/howItWorks/HowItWorks";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <Header />
       <main>
         <HeroSection />
+        <HowItWorks />
         <Documents />
         <FAQ />
       </main>

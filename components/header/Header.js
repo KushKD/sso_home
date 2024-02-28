@@ -13,20 +13,22 @@ export default function Header() {
               src="images/hp_logo.png"
             />
           </a>
-          <h1 className={styles.siteName}>Himachal Pradesh Single Sign On</h1>
+          <h1 className={styles.siteName}>
+            Himachal Pradesh Single Sign On (SSO)
+          </h1>
         </div>
         <nav className={styles.mainNav}>
           <ul className={styles.mainNavList}>
             <li>
-              <Link className={styles.mainNavLink} href="#">
+              <Link className={styles.mainNavLink} href="#howItWorks">
                 How it works
               </Link>
             </li>
-            <li>
+            {/* <li>
               <Link className={styles.mainNavLink} href="#">
                 Benifits
               </Link>
-            </li>
+            </li> */}
             <li>
               <Link className={styles.mainNavLink} href="#documentation">
                 Documentation

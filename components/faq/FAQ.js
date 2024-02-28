@@ -14,7 +14,7 @@ export default function FAQ() {
           <div>
             <img
               className={styles.works_img}
-              src="images/knowmore.svg"
+              src="images/faq.png"
               alt="How SSO Works"
             />
           </div>

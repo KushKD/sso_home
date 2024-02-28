@@ -1,0 +1,71 @@
+.sectionHowItWorks {
+  padding: 5.6rem 0;
+  background-color: #fff;
+  /* background-color: #e8f1fa; */
+}
+
+.container {
+  /* 1140px */
+  max-width: 120rem;
+  padding: 0 3.2rem;
+  margin: 0 auto;
+}
+
+.headingSecondary {
+  font-size: 3.5rem;
+  line-height: 1;
+  color: #333;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  margin-bottom: 4.2rem;
+  text-align: center;
+}
+
+.headingSecondaryLeft {
+  font-size: 3.5rem;
+  line-height: 1;
+  color: #333;
+  font-weight: 500;
+  letter-spacing: -0.5px;
+  margin-bottom: 4.2rem;
+  text-align: left; /* Align the text to the left */
+}
+
+.howItWorksDesc {
+  font-size: 2rem;
+  line-height: 1.5;
+  margin-bottom: 4.8rem;
+  text-align: justify;
+}
+
+.grid {
+  display: grid;
+}
+
+.grid4Col {
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10rem;
+  align-items: center; /* Align the grid container vertically at the center */
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.flexImage {
+  width: 50%;
+}
+
+.headingThird {
+  font-size: 2rem;
+  line-height: 1;
+  color: #333;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  margin-bottom: 0.8rem;
+  text-align: center;
+}
