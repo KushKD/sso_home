@@ -1,7 +1,6 @@
 .sectionHowItWorks {
   padding: 5.6rem 0;
   background-color: #fff;
-  /* background-color: #e8f1fa; */
 }
 
 .container {
@@ -68,4 +67,209 @@
   letter-spacing: 1.5px;
   margin-bottom: 0.8rem;
   text-align: center;
+}
+
+/*
+rem and em do not depend on HTML Font Size in Media Queries insteand 1rem = 1em = 16px
+84 em here is 84*16 = 1344px
+BELOW 1344 Px Smaller Desktops
+*/
+@media (max-width: 84em) {
+  .headingSecondary {
+    font-size: 3.5rem;
+    line-height: 1;
+    color: #333;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    margin-bottom: 4.2rem;
+    text-align: center;
+  }
+
+  .headingSecondaryLeft {
+    font-size: 3.5rem;
+    line-height: 1;
+    color: #333;
+    font-weight: 500;
+    letter-spacing: -0.5px;
+    margin-bottom: 4.2rem;
+    text-align: left; /* Align the text to the left */
+  }
+
+  .howItWorksDesc {
+    font-size: 2rem;
+    line-height: 1.5;
+    margin-bottom: 4.8rem;
+    text-align: justify;
+  }
+
+  .grid {
+    display: grid;
+  }
+
+  .grid4Col {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10rem;
+    align-items: center; /* Align the grid container vertically at the center */
+  }
+
+  .flex {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .flexImage {
+    width: 50%;
+  }
+
+  .headingThird {
+    font-size: 2rem;
+    line-height: 1;
+    color: #333;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    margin-bottom: 0.8rem;
+    text-align: center;
+  }
+}
+
+/**************************/
+/* BELOW 1200px (Landscape Tablets) */
+/**************************/
+
+@media (max-width: 75em) {
+}
+
+/**************************/
+/* BELOW 944px (Tablets) */
+/**************************/
+
+@media (max-width: 59em) {
+  .sectionHowItWorks {
+    padding: 4.6rem 0;
+    background-color: #fff;
+  }
+
+  .headingSecondary {
+    font-size: 3rem;
+  }
+
+  .headingSecondaryLeft {
+    font-size: 3rem;
+    font-weight: 500;
+  }
+
+  .howItWorksDesc {
+    font-size: 2rem;
+    line-height: 1;
+  }
+
+  .grid4Col {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem;
+  }
+
+  .flex {
+    gap: 1rem;
+  }
+
+  .flexImage {
+    width: 50%;
+  }
+
+  .headingThird {
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+}
+
+/**************************/
+/* BELOW 704px (Smaller tablets) */
+/**************************/
+
+@media (max-width: 44em) {
+  .sectionHowItWorks {
+    padding: 4.6rem 0;
+    background-color: #fff;
+  }
+
+  .headingSecondary {
+    font-size: 3rem;
+  }
+
+  .headingSecondaryLeft {
+    font-size: 3rem;
+    font-weight: 500;
+  }
+
+  .howItWorksDesc {
+    font-size: 2rem;
+    line-height: 1;
+  }
+
+  .grid4Col {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem;
+  }
+
+  .flex {
+    gap: 1rem;
+  }
+
+  .flexImage {
+    width: 50%;
+  }
+
+  .headingThird {
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+}
+
+/**************************/
+/* BELOW 544px (Phones) */
+/**************************/
+
+@media (max-width: 34em) {
+  .sectionHowItWorks {
+    padding: 4.6rem 0;
+    background-color: #fff;
+  }
+
+  .headingSecondary {
+    font-size: 3rem;
+  }
+
+  .headingSecondaryLeft {
+    font-size: 3rem;
+    font-weight: 500;
+  }
+
+  .howItWorksDesc {
+    font-size: 2rem;
+    line-height: 1;
+  }
+
+  .grid4Col {
+    grid-template-columns: 1fr;
+  }
+
+  .flex {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .flexImage {
+    width: 50%;
+  }
+
+  .headingThird {
+    font-size: 2rem;
+    font-weight: 500;
+  }
 }
