@@ -14,7 +14,7 @@ const listItems = [
   {
     id: 1,
     text: "SSO Integration Docuemnt API-1.0",
-    doc_name: "/pdf/integration.pdf",
+    doc_name: "/pdf/HPSSO_Integration_Kit.pdf",
   },
   {
     id: 2,
