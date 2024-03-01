@@ -14,18 +14,32 @@ const listItems = [
   {
     id: 1,
     text: "SSO Integration Docuemnt API-1.0",
+    doc_name: "/pdf/integration.pdf",
   },
-  { id: 2, text: "List of Non Editable Parameters " },
-  { id: 3, text: "User Manual" },
+  {
+    id: 2,
+    text: "List of Non Editable Parameters ",
+    doc_name: "/pdf/params.pdf",
+  },
+  { id: 3, text: "User Manual", doc_name: "/pdf/manual.pdf" },
 ];
 
 const SampleCode = [
   {
     id: 1,
-    text: "Sample Code for Integration using Java ",
+    text: "Sample Code for Integration using PHP ",
+    doc_name: "/docs/php.zip",
   },
-  { id: 2, text: "Sample Code for Integration using .Net " },
-  { id: 3, text: "Sample Code for Integraion using JS" },
+  {
+    id: 2,
+    text: "Sample Code for Integration using .Net ",
+    doc_name: "/docs/SSO.Net.zip",
+  },
+  {
+    id: 3,
+    text: "Sample Code for Integraion using JS",
+    doc_name: "/docs/js.zip",
+  },
 ];
 
 const flows = [
@@ -83,9 +97,10 @@ const Tabs = () => {
                             alt="Tick"
                             className={styles.tickIcon}
                           />
-                          <a href="#">{item.text}</a>
+                          <a href={getImagePath(item.doc_name)} download>
+                            {item.text}
+                          </a>
                         </span>
-                        {/* <img className={styles.downloadIcon} /> */}
                       </li>
                     ))}
                   </ul>
@@ -111,7 +126,9 @@ const Tabs = () => {
                               alt="Tick"
                               className={styles.tickIcon}
                             />
-                            <a href="#">{item.text}</a>
+                            <a href={getImagePath(item.doc_name)} download>
+                              {item.text}
+                            </a>
                           </span>
                           {/* <img className={styles.downloadIcon} /> */}
                         </li>
