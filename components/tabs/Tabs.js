@@ -13,7 +13,7 @@ const tabData = [
 const listItems = [
   {
     id: 1,
-    text: "SSO Integration Docuemnt API-1.0",
+    text: "SSO Integration Document API-1.0",
     doc_name: "/pdf/HPSSO_Integration_Kit.pdf",
   },
   {

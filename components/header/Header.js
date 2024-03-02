@@ -55,7 +55,7 @@ export default function Header() {
                 Application Onboarding
               </Link>
             </li> */}
-            <li>
+            {/* <li>
               <Link
                 className={`${styles.mainNavLink} ${styles.navCta}`}
                 href="https://sso.hp.gov.in"
@@ -63,7 +63,7 @@ export default function Header() {
               >
                 Sign Up
               </Link>
-            </li>
+            </li> */}
           </ul>
         </nav>
 
