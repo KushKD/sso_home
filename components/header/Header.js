@@ -21,7 +21,7 @@ export default function Header() {
             <img
               className={styles.logo}
               alt="HP Government logo"
-              src={getImagePath("/images/hp_logo.png")}
+              src={getImagePath("/images/logo-hp.jpg")}
             />
           </a>
           <h1 className={styles.siteName}>
